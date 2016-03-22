@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LX16</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="mail_prompt">email service</string>
+    <string name="action_settings">Settings</string>
+    <string name="course_prompt">courses</string>
+</resources>

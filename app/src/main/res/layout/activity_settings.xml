@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.nachiket.lx16.SettingsActivity"
+    android:id="@+id/d">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:text="Administrator Stuff"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:id="@+id/ip"
+        android:hint="Enter the IP"/>
+
+    <info.hoang8f.widget.FButton
+        android:text="Local Sync"
+        android:id="@+id/sync"
+        fbutton:shadowEnabled="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        fbutton:buttonColor="@color/colorPrimary"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:id="@+id/password"/>
+
+    <info.hoang8f.widget.FButton
+        android:text="Cloud"
+        android:id="@+id/cloud"
+        fbutton:shadowEnabled="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        fbutton:buttonColor="@color/colorPrimary"
+        android:layout_height="wrap_content" />
+
+    <info.hoang8f.widget.FButton
+        android:text="SYNC"
+        android:id="@+id/cloudsync"
+        fbutton:shadowEnabled="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="40dp"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        fbutton:buttonColor="@color/colorPrimary"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

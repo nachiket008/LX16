@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.nachiket.lx16.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/editname"
+                android:textSize="22dp"
+                android:inputType="textPersonName|textCapWords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Name" />
+
+            <EditText
+                android:textSize="22dp"
+                android:id="@+id/editcolg"
+                android:inputType="textPersonName|textCapSentences"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editname"
+                android:hint="Enter College Name"
+                android:paddingTop="10dp" />
+
+
+            <LinearLayout
+                android:layout_below="@id/editcolg"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/laymail"
+                android:gravity="fill_horizontal"
+                android:weightSum="8"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/editmail"
+                    android:textSize="22dp"
+                    android:inputType="textEmailAddress"
+                    android:layout_weight="5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Email id"
+                    android:paddingTop="10dp" />
+                <Spinner
+                    android:textSize="22dp"
+                    android:id="@+id/mail_spinner"
+                    android:prompt="@string/mail_prompt"
+                    android:drawSelectorOnTop="true"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
+
+                </Spinner>
+            </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_below="@id/laymail"
+                android:hint="Mobile Number"
+                android:textSize="22dp"
+                android:id="@+id/editmobile"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="50dp"
+                android:id="@+id/event"
+                android:layout_below="@id/editmobile"
+                android:drawSelectorOnTop="true">
+
+            </Spinner>
+            <LinearLayout
+                android:layout_below="@id/event"
+                android:id="@+id/laypaid"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22dp"
+                    android:text="Amount Paid : "/>
+                <EditText
+                    android:textSize="22dp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editpaid"
+                    android:inputType="number"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@id/laypaid"
+                android:id="@+id/layrem"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22dp"
+                    android:text="Amount Remaining : "/>
+                <EditText
+                    android:layout_width="150dp"
+                    android:textSize="22dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editrem"
+                    android:inputType="number"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_below="@id/layrem"
+                android:id="@+id/textid"
+                android:textSize="22dp"
+                android:text="Unique ID : "
+                android:layout_height="wrap_content" />
+            <FrameLayout
+                android:layout_below="@+id/textid"
+                android:id="@+id/basic_button"
+                android:layout_centerHorizontal="true"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <info.hoang8f.widget.FButton
+                    android:text="Clear"
+                    android:id="@+id/clear"
+                    fbutton:shadowEnabled="true"
+                    android:layout_gravity="right|bottom"
+                    android:layout_margin="10dp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    fbutton:buttonColor="@color/colorPrimary"
+                    android:layout_height="wrap_content" />
+
+                <info.hoang8f.widget.FButton
+                    android:id="@+id/register"
+                    android:layout_marginLeft="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_margin="10dp"
+                    fbutton:shadowEnabled="true"
+                    android:text="Register"
+                    fbutton:buttonColor="@color/colorPrimary"
+                    android:textColor="@android:color/white" />
+            </FrameLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

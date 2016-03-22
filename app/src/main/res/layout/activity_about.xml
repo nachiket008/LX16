@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    >
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bkgrnd"
+        android:scaleType="center"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mcug"
+        android:layout_marginTop="100dp"
+        android:id="@+id/mcug"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#9F988F"
+        android:text="App Made By Nachiket Ghorpade and Ankit Sharma."
+        android:layout_below="@+id/mcug"
+        android:id="@+id/t1"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"/>
+
+
+</RelativeLayout>

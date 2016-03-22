@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="courses">
+    <item>FE</item>
+    <item>SE</item>
+    <item>TE</item>
+    <item>Diploma</item>
+    <item>Others</item>
+    </string-array>
+</resources>

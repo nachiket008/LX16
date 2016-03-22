@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="email_service">
+    <item>\@gmail.com</item>
+    <item>\@yahoo.com</item>
+    <item>\@outlook.com</item>
+    <item>\@hotmail.com</item>
+    <item>\@rediffmail.com</item>
+    </string-array>
+
+</resources>
